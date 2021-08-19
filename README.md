@@ -1,3 +1,18 @@
+# verror without sprintf
+
+This module is a fork of [verror](https://www.npmjs.com/package/verror), but without sprintf formatting, so that you can throw error with url-encoded strings.
+
+```js
+// with original verror
+new VError('%2F') // %2F is url-encoded representation of /
+// Uncaught Error: too few args to sprintf, Oops!
+
+// with verror without sprintf
+new VError('%2F')
+// VError: %2F
+```
+
+
 # verror: rich JavaScript errors
 
 This module provides several classes in support of Joyent's [Best Practices for
