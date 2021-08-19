@@ -1,6 +1,6 @@
 {
 	"name": "verror-without-sprintf",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "richer JavaScript errors, but without sprintf",
 	"main": "./lib/verror.js",
 	"repository": {
@@ -17,6 +17,7 @@
 	"scripts": {
 		"test": "make test"
 	},
+	"types": "index.d.ts",
 	"license": "MIT",
 	"keywords": [
 		"error",
